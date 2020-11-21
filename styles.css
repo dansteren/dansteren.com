@@ -82,3 +82,18 @@ header {
 .contact_link > a {
   margin-right: 72px;
 }
+
+section {
+  height: 300px;
+}
+
+footer {
+  background-color: var(--midnight);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0px;
+  font-size: 1.5rem;
+  color: var(--soft-white);
+}
