@@ -5,6 +5,7 @@
   --midnight: #1E242B;
   --bright-white: rgba(255,255,255,.9);
   --soft-white: rgba(255,255,255,.75);
+  --shadow: rgba(255,255,255,.5);
   font-size: 100%;
 }
 
@@ -34,11 +35,11 @@ body {
 
 h1 {
   color: var(--sand);
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: normal;
 }
 
-header {
+body > header {
   display: flex;
   background-color: var(--midnight);
   padding: 0px 100px;
@@ -83,8 +84,57 @@ header {
   margin-right: 72px;
 }
 
+main {
+  padding-top: 0px;
+  padding-right: 150px;
+  padding-bottom: 0px;
+  padding-left: 150px;
+}
+
 section {
-  height: 300px;
+  padding-bottom: 50px;
+}
+
+main > section:first-of-type {
+  padding-top: 200px;
+}
+
+main > section > h2 {
+  color: var(--sand);
+  font-size: 3rem;
+}
+
+section > p {
+  font-size: 1.8rem;
+  color: var(--soft-white);
+}
+
+main > section > section > header {
+  display: flex;
+  align-items: flex-start;
+}
+
+main > section > section > header > svg {
+  width: 96px;
+}
+
+main > section > section > header > .job-description {
+  margin-left: 64px;
+  width: 100%;
+}
+
+main > section > section > header > .job-description > .position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--shadow);
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 footer {
