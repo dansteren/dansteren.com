@@ -131,10 +131,35 @@ main > section > section > header > .job-description > .position {
   font-size: 1.5rem;
 }
 
+section#skills > div.badges {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section#skills > div.badges > svg {
+  width: 160px;
+  color: var(--bright-white);
+  padding: 0px 16px;
+}
+
+section#skills > div.badges > svg.vue > path:first-child {
+  fill: var(--shadow);
+}
+
+section#skills > div.badges > svg.rails > path:first-child {
+  fill: var(--shadow);
+}
+
 h3 {
   font-size: 2rem;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+section#experience > section.job svg.simplenexus {
+  color: var(--bright-white);
 }
 
 footer {
