@@ -27,10 +27,14 @@ a:active {
 
 body {
   background-color: var(--dusk);
-  color: var(--bright-white);
+  color: var(--soft-white);
   margin: 0px;
   padding: 0px;
   font-family: 'Fira Code', monospace;
+}
+
+svg {
+  color: inherit;
 }
 
 h1 {
@@ -66,22 +70,19 @@ body > header {
   justify-content: space-between;
 }
 
-.contact_link {
+#contact_links > a {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 24px;
+  margin: 16px 0px;
+
 }
 
-.contact_link > svg {
+#contact_links svg {
   width: 36px;
   height: 36px;
   margin-right: 12px;
-  color: var(--soft-white);
-}
-
-.contact_link > a {
-  margin: 16px 0px;
 }
 
 main {
@@ -144,7 +145,6 @@ section#skills > div.badges {
 
 section#skills > div.badges > svg {
   width: 160px;
-  color: var(--bright-white);
   padding: 0px 16px;
 }
 
@@ -168,9 +168,6 @@ h3 {
   font-size: 2rem;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-section#experience > section.job svg.simplenexus {
   color: var(--bright-white);
 }
 
