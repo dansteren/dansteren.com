@@ -104,6 +104,10 @@ main > section > h2 {
   font-size: 3rem;
 }
 
+p {
+  font-weight: 300;
+}
+
 section > p {
   font-size: 1.8rem;
   color: var(--soft-white);
@@ -144,11 +148,19 @@ section#skills > div.badges > svg {
   padding: 0px 16px;
 }
 
-section#skills > div.badges > svg.vue > path:first-child {
+svg.vue > path:first-child {
   fill: var(--shadow);
 }
 
-section#skills > div.badges > svg.rails > path:first-child {
+svg.rails > path:first-child {
+  fill: var(--shadow);
+}
+
+svg.aws > path:first-child {
+  fill: var(--shadow);
+}
+
+svg.mysql > path:first-child {
   fill: var(--shadow);
 }
 
@@ -160,6 +172,16 @@ h3 {
 
 section#experience > section.job svg.simplenexus {
   color: var(--bright-white);
+}
+
+.tech_stack {
+  display: flex;
+  align-items: center;
+}
+
+.tech_stack svg{
+  width: 40px;
+  margin: 0px 12px;
 }
 
 footer {
@@ -235,5 +257,9 @@ footer {
 
   main > section:first-of-type {
     padding-top: 0px;
+  }
+
+  .tech_stack svg {
+    margin: 0px 8px;
   }
 }
