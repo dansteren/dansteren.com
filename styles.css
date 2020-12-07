@@ -6,6 +6,8 @@
   --bright-white: rgba(255,255,255,.9);
   --soft-white: rgba(255,255,255,.75);
   --shadow: rgba(255,255,255,.5);
+  --semi-opaque: 50%;
+
   font-size: 100%;
 }
 
@@ -132,7 +134,7 @@ main > section > section > header > .job-description > .position {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: var(--shadow);
+  opacity: 50%;
   font-size: 1.5rem;
 }
 
@@ -149,19 +151,19 @@ section#skills > div.badges > svg {
 }
 
 svg.vue > path:first-child {
-  fill: var(--shadow);
+  opacity: var(--semi-opaque);
 }
 
 svg.rails > path:first-child {
-  fill: var(--shadow);
+  opacity: var(--semi-opaque);
 }
 
 svg.aws > path:first-child {
-  fill: var(--shadow);
+  opacity: var(--semi-opaque);
 }
 
 svg.mysql > path:first-child {
-  fill: var(--shadow);
+  opacity: var(--semi-opaque);
 }
 
 h3 {
