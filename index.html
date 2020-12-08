@@ -268,3 +268,14 @@
     </footer>
   </body>
 </html>
+<script>
+  const consoleMessage = `
+    👋🏻 Hi. I see you're inspecting my work. Just wanted to say, although I could
+    have used a framework like %creact%c or %cvue%c, I decided to just stick with vanilla
+    js due to the simple nature of this project. That's all :). As you were...
+  `.replace(/^\s+/igm, '');
+  const reactStyle = 'color:#61dafb'
+  const vueStyle = 'color:#3fb983'
+  const defaultStyle = 'color:unset'
+  console.log(consoleMessage, reactStyle, defaultStyle, vueStyle, defaultStyle)
+</script>
