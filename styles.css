@@ -116,12 +116,12 @@ section > p {
   color: var(--soft-white);
 }
 
-main > section > section > header {
+.job > header {
   display: flex;
   align-items: flex-start;
 }
 
-main > section > section > header > svg {
+.job > header > svg {
   width: 96px;
 }
 
@@ -130,12 +130,12 @@ main > section > section > header > svg {
   opacity: 75%;
 }
 
-main > section > section > header > .job-description {
+.job > header > .job-description {
   margin-left: 64px;
   width: 100%;
 }
 
-main > section > section > header > .job-description > .position {
+.job > header > .job-description > .position {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
