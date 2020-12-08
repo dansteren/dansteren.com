@@ -125,6 +125,11 @@ main > section > section > header > svg {
   width: 96px;
 }
 
+#byu > header > img:first-child {
+  width: 96px;
+  opacity: 75%;
+}
+
 main > section > section > header > .job-description {
   margin-left: 64px;
   width: 100%;
